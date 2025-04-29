@@ -1,0 +1,33 @@
+#intro {
+    height: 100vh;  /* 100% da altura da tela */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: red;
+    background-image: url(../assets/Background_Intro.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: var(--base-color-gray600);
+
+}
+
+#header {
+    width: 1040px;
+    height: 447px;
+    /* border: 2px solid red; */
+}
+
+#header img {
+    margin-bottom: 56px;
+}
+#header .text-sm {
+    font-family: var(--font-family-mavenpro);
+    color: var(--base-color-gray400);
+    max-width: 680px;
+    line-height: 1.4;
+    text-align: center;
+    margin: 0 auto;
+  }
