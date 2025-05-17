@@ -45,6 +45,8 @@ h2 {
 
 h3 {
     font: var(--title-sm);
+    color: var(--base-color-gray600);
+
 }
 
 .subs {
@@ -53,8 +55,10 @@ h3 {
 
 .text-md {
     font: var(--text-md);
+    color: var(--base-color-gray600);
 }
 
 .text-sm {
     font: var(--text-sm);
+    color: var(--base-color-gray500);
 }

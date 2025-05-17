@@ -39,6 +39,7 @@
     flex-wrap: wrap;
     flex-direction: row;
     margin-top: 0.5rem;
+    padding-bottom: 76px;
 
 }
 
@@ -64,24 +65,25 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-
-    h2 {
-        color: var(--base-color-gray600);
-        text-align: center;
-        padding-bottom: 56px;
-    }
-
-    .subs {
-        color: var(--main-color-red);
-        display: block;
-        text-align: center;
-        margin: 0 auto;
-        padding-bottom: 8px;
-    }
+    padding-bottom: 9rem;
+    
+ 
 }
 
+h2 {
+    color: var(--base-color-gray600);
+     text-align: center;
+    padding-bottom: 56px;
+}
 
-.grid {
+.subs {
+    color: var(--main-color-red);
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 8px;
+}
+.my-job {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
     gap: 2rem;
@@ -99,15 +101,64 @@
     gap: 1rem;
   }
 
-  .card img {
+.card img {
     width: 100%;
     border-radius: 0.5rem;
   }
   
-  .card h3 {
+.card h3 {
     margin: 0;
   }
   
-  .card span {
+.card span {
     line-height: 1.4;
   }
+
+
+
+
+
+.services {
+  background-color: var(--base-color-gray100);
+  padding-top:88px;
+  padding-bottom: 120px;
+  text-align: center;
+
+  & h2 {
+    padding-bottom: 56px
+  }
+}
+
+.grid-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  max-width: 1040px;
+  margin: 0 auto;
+ 
+  & figure {
+  background-color: var(--base-color-gray200);
+  border: 1px solid var(--base-color-gray300);
+  border-radius: 12px;
+  padding: 20px;
+  min-height: 155px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  }
+
+    & figure img {
+  width: 32px;
+  height: 32px;
+  margin-bottom: 20px;
+    }
+
+   & h3 {
+  color: var(--base-color-gray600);
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+    }
+
+  
+}
