@@ -13,6 +13,10 @@
 
 }
 
+#intro > div:last-child {
+  margin-top: 94px; /* Espaço entre as tags e a seta */
+}
+
 #header {
     width: 1040px;
     height: 447px;
@@ -29,6 +33,9 @@
     line-height: 1.4;
     text-align: center;
     margin: 0 auto;
+
+    margin-bottom: 80px;
+
 }
 
 .tag {
@@ -122,10 +129,6 @@ h2 {
 }
 
 
-
-
-
-
 .services {
   background-color: var(--base-color-gray100);
   padding-top:88px;
@@ -192,9 +195,6 @@ h2 {
     margin-bottom: 8px;
   }
 
-  /* .text-md {
-    margin-bottom: 48px;
-  } */
 }
 
 
@@ -205,8 +205,6 @@ h2 {
   gap: 1rem;
   align-items: center;
   
-  
-
 }
 
 .social-logo {
@@ -222,13 +220,13 @@ h2 {
 
   padding-left: 20px;
   padding-right: 20px;
+  
 
-  & img:first-child{
+  & svg{
   width: 28px;
   height: 28px;
-  padding-right: 12px;
+  margin-right: 12px;
   }
-  
 
   & span {
     flex: 1;
@@ -237,13 +235,21 @@ h2 {
     font-size: 1rem;
   }
 
-  & img:last-child {
+  & img {
     width: 20px;
     height: 20px;
 
   }
 }
 
+
+
+
 .social-logo:hover{
   border: 2px solid var(--main-color-blue);
+
+  & svg {
+  fill: var(--main-color-blue);
+  }
+  
 }
